@@ -30,11 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pxFoto = new System.Windows.Forms.PictureBox();
             this.lblCandidato = new System.Windows.Forms.Label();
             this.lblTurma = new System.Windows.Forms.Label();
-            this.txtnum1 = new System.Windows.Forms.TextBox();
+            this.txtNum1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtnum2 = new System.Windows.Forms.TextBox();
+            this.txtNum2 = new System.Windows.Forms.TextBox();
             this.VOTO = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblMensagem = new System.Windows.Forms.Panel();
@@ -47,7 +48,7 @@
             this.btn9 = new System.Windows.Forms.Button();
             this.btnBranco = new System.Windows.Forms.Button();
             this.btnCorrigir = new System.Windows.Forms.Button();
-            this.btnConfirmar = new System.Windows.Forms.Button();
+            this.btnConfirma = new System.Windows.Forms.Button();
             this.btn4 = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
@@ -57,12 +58,11 @@
             this.btn7 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.pxFoto = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pxFoto)).BeginInit();
             this.lblMensagem.SuspendLayout();
             this.btn00.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pxFoto)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -70,15 +70,24 @@
             this.panel1.Controls.Add(this.pxFoto);
             this.panel1.Controls.Add(this.lblCandidato);
             this.panel1.Controls.Add(this.lblTurma);
-            this.panel1.Controls.Add(this.txtnum1);
+            this.panel1.Controls.Add(this.txtNum1);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.txtnum2);
+            this.panel1.Controls.Add(this.txtNum2);
             this.panel1.Controls.Add(this.VOTO);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(468, 254);
             this.panel1.TabIndex = 0;
+            // 
+            // pxFoto
+            // 
+            this.pxFoto.Location = new System.Drawing.Point(318, 22);
+            this.pxFoto.Name = "pxFoto";
+            this.pxFoto.Size = new System.Drawing.Size(137, 217);
+            this.pxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pxFoto.TabIndex = 9;
+            this.pxFoto.TabStop = false;
             // 
             // lblCandidato
             // 
@@ -96,12 +105,12 @@
             this.lblTurma.Size = new System.Drawing.Size(0, 13);
             this.lblTurma.TabIndex = 7;
             // 
-            // txtnum1
+            // txtNum1
             // 
-            this.txtnum1.Location = new System.Drawing.Point(82, 148);
-            this.txtnum1.Name = "txtnum1";
-            this.txtnum1.Size = new System.Drawing.Size(35, 20);
-            this.txtnum1.TabIndex = 6;
+            this.txtNum1.Location = new System.Drawing.Point(82, 148);
+            this.txtNum1.Name = "txtNum1";
+            this.txtNum1.Size = new System.Drawing.Size(35, 20);
+            this.txtNum1.TabIndex = 6;
             // 
             // label3
             // 
@@ -112,12 +121,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "NÚMERO";
             // 
-            // txtnum2
+            // txtNum2
             // 
-            this.txtnum2.Location = new System.Drawing.Point(126, 148);
-            this.txtnum2.Name = "txtnum2";
-            this.txtnum2.Size = new System.Drawing.Size(32, 20);
-            this.txtnum2.TabIndex = 3;
+            this.txtNum2.Location = new System.Drawing.Point(126, 148);
+            this.txtNum2.Name = "txtNum2";
+            this.txtNum2.Size = new System.Drawing.Size(32, 20);
+            this.txtNum2.TabIndex = 3;
             // 
             // VOTO
             // 
@@ -186,7 +195,7 @@
             this.btn00.Controls.Add(this.btn9);
             this.btn00.Controls.Add(this.btnBranco);
             this.btn00.Controls.Add(this.btnCorrigir);
-            this.btn00.Controls.Add(this.btnConfirmar);
+            this.btn00.Controls.Add(this.btnConfirma);
             this.btn00.Controls.Add(this.btn4);
             this.btn00.Controls.Add(this.btn0);
             this.btn00.Controls.Add(this.btn3);
@@ -237,6 +246,7 @@
             this.btnBranco.TabIndex = 15;
             this.btnBranco.Text = "BRANCO";
             this.btnBranco.UseVisualStyleBackColor = true;
+
             // 
             // btnCorrigir
             // 
@@ -248,15 +258,16 @@
             this.btnCorrigir.Text = "CORRIGIR";
             this.btnCorrigir.UseVisualStyleBackColor = false;
             // 
-            // btnConfirmar
+            // btnConfirma
             // 
-            this.btnConfirmar.BackColor = System.Drawing.Color.Lime;
-            this.btnConfirmar.Location = new System.Drawing.Point(189, 292);
-            this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(88, 35);
-            this.btnConfirmar.TabIndex = 13;
-            this.btnConfirmar.Text = "CONFIRMAR";
-            this.btnConfirmar.UseVisualStyleBackColor = false;
+            this.btnConfirma.BackColor = System.Drawing.Color.Lime;
+            this.btnConfirma.Location = new System.Drawing.Point(189, 292);
+            this.btnConfirma.Name = "btnConfirma";
+            this.btnConfirma.Size = new System.Drawing.Size(88, 35);
+            this.btnConfirma.TabIndex = 13;
+            this.btnConfirma.Text = "CONFIRMA";
+            this.btnConfirma.UseVisualStyleBackColor = false;
+            this.btnConfirma.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // btn4
             // 
@@ -338,15 +349,6 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "URNA ELETRÔNICA";
             // 
-            // pxFoto
-            // 
-            this.pxFoto.Location = new System.Drawing.Point(318, 22);
-            this.pxFoto.Name = "pxFoto";
-            this.pxFoto.Size = new System.Drawing.Size(137, 217);
-            this.pxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pxFoto.TabIndex = 9;
-            this.pxFoto.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -362,11 +364,11 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pxFoto)).EndInit();
             this.lblMensagem.ResumeLayout(false);
             this.lblMensagem.PerformLayout();
             this.btn00.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pxFoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -379,9 +381,9 @@
         private System.Windows.Forms.Panel lblMensagem;
         private System.Windows.Forms.Label lblCandidato;
         private System.Windows.Forms.Label lblTurma;
-        private System.Windows.Forms.TextBox txtnum1;
+        private System.Windows.Forms.TextBox txtNum1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtnum2;
+        private System.Windows.Forms.TextBox txtNum2;
         private System.Windows.Forms.Label VOTO;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
@@ -392,7 +394,7 @@
         private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.Button btnBranco;
         private System.Windows.Forms.Button btnCorrigir;
-        private System.Windows.Forms.Button btnConfirmar;
+        private System.Windows.Forms.Button btnConfirma;
         private System.Windows.Forms.Button btn4;
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btn3;
